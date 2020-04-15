@@ -1,0 +1,26 @@
+-- select *
+-- from countries;
+
+-- select *
+-- from population_years;
+
+
+-- select count(*)
+-- from countries
+-- where continent is 'Africa';
+
+-- select sum(population)
+-- from countries 
+-- join population_years
+-- on countries.id = population_years.id
+-- where continent is 'Oceania';
+
+select sum(population)
+from countries
+join population_years
+on countries.id = population_years.id
+where year is 2010;
+
+-- select count(*)
+-- from countries
+-- where name like '%The%';
